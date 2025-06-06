@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Kaique Ronie</title>
-        
-        
-        <link rel="stylesheet" href="Style.css">
-        
-     
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        
-        
-        <script src="Script.js" defer></script>
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Kaique Ronie</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="Script.js" defer></script>
+</head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
+        <div class="container nav-container" id="app">
             <div class="logo">KaH</div>
+            <div class="language-switch">
+                <button id="langToggle" class="lang-btn">
+                    <i class="fas fa-globe"></i>
+                    <span class="lang-text">EN</span>
+                </button>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Perfil</a></li>
                 <li><a href="#about">Sobre mim</a></li>
                 <li><a href="#projects">Projetos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
-          
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <div class="profile-container">
+            <div class="profile-container" id="profile-neon">
                 <img src="img/Foto K.jpg" alt="Your Name" class="profile-picture">
-            </div>
+            </div>            
             <h1>Kaique Ronie</h1> 
             <p class="tagline">Full Stack Developer & Freelancer</p>
         </div>
@@ -57,52 +59,53 @@
                 </div>
                 <div class="courses">
                     <h3>Cursos e Certificações</h3>
-                    <div class="course-item">
-                        <h4>Desenvolvimento Web (HTML, CSS) - Avançãdo</h4>
-                        <p>Eniac - 2023</p>
-                    </div>
-                    <div class="course-item">
-                        <h4>JavaScript - Intermediário</h4>
-                        <p>Eniac - 2023</p>
-                    </div>
-                    <div class="course-item">
-                        <h4>React.js - Intermediário</h4>
-                        <p>Eniac - 2023</p>
-                    </div>
-                    <div class="course-item">
-                        <h4>Banco de Dados - Básico</h4>
-                        <p>Eniac - 2023</p>
-                    </div>
-                    <div class="course-item">
-                        <h4>Pacote Office - Intermediário</h4>
-                   
-                    </div>
-                    <div class="course-item">
-                        <h4>Python - Básico</h4>
-                        <p>Eniac - 2023</p>
-                    </div>
-                    <div class="course-item">
-                        <h4>Linguagem C / C# - Básico</h4>
-                        <p>Eniac - 2024</p>
-                    </div>
-                    <div class="course-item">
-                        <h4>Java - Básico</h4>
-                        <p>Eniac - 2024</p>
+                    <div class="courses-list">
+                        <div class="course-item">
+                            <h4>Desenvolvimento Web (HTML, CSS) - Avançado</h4>
+                            <p>Eniac - 2023</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>JavaScript - Intermediário</h4>
+                            <p>Eniac - 2023</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>React.js - Intermediário</h4>
+                            <p>Eniac - 2023</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>Python - Básico</h4>
+                            <p>Eniac - 2023</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>Linguagem C / C# - Básico</h4>
+                            <p>Eniac - 2024</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>Java - Básico</h4>
+                            <p>Eniac - 2024</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>Banco de Dados - Básico</h4>
+                            <p>Eniac - 2023</p>
+                        </div>
+                        <div class="course-item">
+                            <h4>Pacote Office - Intermediário</h4>
+                            <p>Eniac - 2023</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-   
+    <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="container">
             <h2 class="section-title">Meus Projetos</h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="project1.jpg" alt="Project 1">
+                        <img src="project1.jpg" alt="E-Commerce Website">
                     </div>
                     <div class="project-info">
                         <h3>E-Commerce Website</h3>
@@ -112,11 +115,10 @@
                             <a href="#" class="btn">GitHub</a>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/Site_kaique.png" alt="Project 1">
+                        <img src="img/Site_kaique.png" alt="Site Kaique">
                     </div>
                     <div class="project-info">
                         <h3>Site Kaique</h3>
@@ -126,11 +128,10 @@
                             <a href="https://github.com/KaH3050/Site" class="btn">GitHub</a>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="img/atlas.png" alt="Project 1">
+                        <img src="img/atlas.png" alt="Atlas o Dragão">
                     </div>
                     <div class="project-info">
                         <h3>Atlas_o_dragao</h3>
@@ -139,9 +140,7 @@
                             <a href="https://github.com/KaH3050/Atlas_o_dragao/issues/1" class="btn">GitHub</a>
                         </div>
                     </div>
-                    
                 </div>
-                
             </div>
         </div>
     </section>
@@ -154,31 +153,21 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>Kaiqueronie3050@gmail.com</p>
-                        </div>
+                        <div><h3>Email</h3><p>Kaiqueronie3050@gmail.com</p></div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Celular</h3>
-                            <p>(11) 99420-5586</p>
-                        </div>
+                        <div><h3>Celular</h3><p>(11) 99420-5586</p></div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Localização</h3>
-                            <p> Aruja - SP</p>
-                        </div>
+                        <div><h3>Localização</h3><p>Aruja - SP</p></div>
                     </div>
                     <div class="social-links">
                         <a href="https://github.com/KaH3050" class="social-icon"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/kaique-ronie-silva-5824902a1/" class="social-icon"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-               
             </div>
         </div>
     </section>
@@ -200,6 +189,6 @@
         <i class="fab fa-whatsapp"></i>
         <span class="whatsapp-tooltip">Fale comigo no WhatsApp</span>
     </a>
-   
+
 </body>
 </html>
